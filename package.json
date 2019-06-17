@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/*.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:dev": "env-cmd -f .env.development npm run build",
@@ -16,7 +17,8 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "env-cmd": "^9.0.3"
+    "env-cmd": "^9.0.3",
+    "source-map-explorer": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
