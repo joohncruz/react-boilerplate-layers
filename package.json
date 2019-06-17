@@ -1,17 +1,22 @@
 {
   "name": "react-boilerplate-layers",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:dev": "env-cmd -f .env.development npm run build",
+    "build:stg": "env-cmd -f .env.staging npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "env-cmd": "^9.0.3"
   },
   "eslintConfig": {
     "extends": "react-app"

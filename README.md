@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Build Project
+
+Para facilitar o build em diversos ambientes foi configurado neste boilerplate como padrão 3 tipos de build:
+
+-   Produção: `yarn build`
+    -   Arquivo de variaveis de ambiente: `.env.production`
+-   Desenvolvimento: `yarn build:dev`
+    -   Arquivo de variaveis de ambiente: `.env.development`
+-   Homologação: `yarn build:stg`
+    -   Arquivo de variaveis de ambiente: `.env.staging`
+
+
+Para realização da build foi utilizado as variaveis ambiente configuradas no proprio **RCA** https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables#docsNav.
+
+E **ENV-CMD** https://github.com/toddbluhm/env-cmd
