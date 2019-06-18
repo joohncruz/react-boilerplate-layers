@@ -1,0 +1,53 @@
+// Main Pallette
+$primary: #5063ee;
+$primaryHover: #4454ca;
+$primaryActive: #3643a1;
+$primaryFocus: #5063ee;
+$primaryDisabled: #b9c1f9;
+
+$secondary: #00c9e9;
+$secondaryHover: #00c9e9;
+$secondaryActive: #00c9e9;
+$secondaryFocus: #00c9e9;
+$secondaryDisabled: #00c9e9;
+
+// Action Pallette
+$neutral: #919eab;
+$informational: #47c1bf;
+$sucess: #50b83c;
+$warning: #eec200;
+$critical: #f32f00;
+
+// Complementary Pallette
+$deepBlue: #0e1b38; //fundo gráfico
+$deepKoamaru: #2d3365; // Cor secundária do gráfico
+$lightSlateBlue: #818ffc;
+$royalBlue: #5063ee;
+$lightBlue: #e2f2fa;
+$vermelhoClaro: #fabbaf;
+
+// UI Grays
+$lightGray: #f1f3f4;
+$middleGray: #637381;
+$darkGray: #212b36;
+$softWhite: rgba(255, 255, 255, 0.2);
+$white: rgba(255, 255, 255, 1);
+$background: #f8f8f8;
+
+// UI Elements
+$shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+$link: #007ace;
+
+//Media Queries
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktophd: 1336px;
+
+//Fonts
+$font-stack: 'SFProText-Regular';
+
+//Products
+$acucar: #eb6188;
+$milho: #ffbb00;
+$soja: #2fcc71;
