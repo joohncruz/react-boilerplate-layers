@@ -1,14 +1,19 @@
 {
   "config": {
-    "title": "React Boilerplate Layers",
+    "title": "CSS Sass",
     "description": "My awesome app using docz",
     "menu": [],
     "version": "0.1.0",
     "repository": null,
     "native": false,
     "codeSandbox": true,
-    "themeConfig": {},
-    "separator": "-"
+    "themeConfig": {
+      "mode": "dark"
+    },
+    "separator": "-",
+    "plugins": [
+      {}
+    ]
   },
   "props": [
     {

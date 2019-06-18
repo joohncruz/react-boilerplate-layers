@@ -8,4 +8,7 @@ export default {
       cssmodules: true,
     }),
   ],
+  themeConfig: {
+    mode: 'dark',
+  },
 }
