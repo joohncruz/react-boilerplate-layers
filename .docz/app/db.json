@@ -1,0 +1,52 @@
+{
+  "config": {
+    "title": "React Boilerplate Layers",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "props": [
+    {
+      "key": "src\\App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "actualName": "App"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "src/components/atoms/button/button.mdx",
+      "value": {
+        "name": "Button",
+        "id": "efcf438300ecafaa65307274df9b666d",
+        "filepath": "src/components/atoms/button/button.mdx",
+        "link": "",
+        "slug": "src-components-atoms-button-button",
+        "route": "/src-components-atoms-button-button",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    }
+  ]
+}

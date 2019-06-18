@@ -9,9 +9,13 @@
     "build:dev": "env-cmd -f .env.development npm run build",
     "build:stg": "env-cmd -f .env.staging npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "dependencies": {
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
