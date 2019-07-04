@@ -7,6 +7,10 @@ class AuthService {
 
   async login({ email, password }) {
     try {
+      if(!email || !password) {
+        return Promise.reject("Usuario Invalido");
+      }
+
       const { data } = await this.authRepository.post({ email, password });
       return Promise.resolve(data);
     } catch (err) {

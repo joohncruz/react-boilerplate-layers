@@ -9,9 +9,7 @@
     "build:dev": "env-cmd -f .env.development npm run build",
     "build:stg": "env-cmd -f .env.staging npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "history": "^4.9.0",
@@ -27,16 +25,8 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "docz": "^1.2.0",
-    "docz-plugin-css": "^0.11.0",
-    "docz-theme-default": "^1.2.0",
     "env-cmd": "^9.0.3",
     "source-map-explorer": "^2.0.0"
-  },
-  "resolutions": {
-    "ansi-styles": "^3.2.0",
-    "docz*/**/babel-loader": "8.0.5",
-    "docz*/**/webpack": "4.29.6"
   },
   "eslintConfig": {
     "extends": "react-app"

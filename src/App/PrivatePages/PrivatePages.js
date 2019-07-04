@@ -4,14 +4,14 @@ import { Route, Redirect } from 'react-router-dom';
 import './PrivatePages.scss';
 
 function PrivatePages({
-  component: Component, logged, menu, ...rest
+  component: Component, logged, menu, loadLogout, ...rest
 }) {
   return (
     <Route
       {...rest}
       render={props => (logged ? (
         <div className="private-pages">
-          <h1>Private Pages</h1>
+          <h1>Private Pages</h1> <button onClick={loadLogout}> Sair </button>
           <div className="private-pages-content">
             <Component {...props} />
           </div>

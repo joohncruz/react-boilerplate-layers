@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { loadLogout } from 'Infrastructure/Store/Auth';
 import PrivatePages from './PrivatePages';
 
 const mapStateToProps = (state) => {
@@ -9,7 +10,13 @@ const mapStateToProps = (state) => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    loadLogout: () => dispatch(loadLogout()),
+  }
+};
+
 export default connect(
   mapStateToProps,
-  null,
+  mapDispatchToProps,
 )(PrivatePages);

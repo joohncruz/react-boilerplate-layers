@@ -20,6 +20,7 @@ class AuthRepository {
       }, Math.random() * 2000 + 1000);
     });
   }
+
 }
 
 export default AuthRepository;

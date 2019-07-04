@@ -13,8 +13,8 @@ class Login extends Component {
     };
   }
 
-  handleChange = (value, id) => {
-    this.setState({ [id]: value });
+  handleChange = event => {
+    this.setState({ [event.target.id]: event.target.value });
   };
 
   submit = async () => {
@@ -29,20 +29,22 @@ class Login extends Component {
 
     return (
       <div className="login">
-        <input
-            id="email"
-            label="Email"
-            type="text"
-            value={email}
-            onChange={this.handleChange}
-        />
-        <input
-            id="password"
-            label="Senha"
-            type="password"
-            value={password}
-            onChange={this.handleChange}
-        />
+        <form>
+          <input
+              id="email"
+              label="Email"
+              type="text"
+              value={email}
+              onChange={this.handleChange}
+          />
+          <input
+              id="password"
+              label="Senha"
+              type="password"
+              value={password}
+              onChange={this.handleChange}
+          />
+        </form>
         <button onClick={this.submit}>
             Entrar
         </button>
