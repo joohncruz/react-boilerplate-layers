@@ -1,56 +1,66 @@
-import React, { Component } from 'react';
+import React, { useState  } from 'react';
 import PropTypes from 'prop-types';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 import './Login.scss';
 
-class Login extends Component {
-  constructor(props) {
-    super(props);
+const useStyles = makeStyles(theme => ({
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 200,
+  },
+  dense: {
+    marginTop: 19,
+  },
+  menu: {
+    width: 200,
+  },
+}));
 
-    this.state = {
-      email: '',
-      password: '',
-    };
-  }
+function Login({ loadAuth }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  handleChange = event => {
-    this.setState({ [event.target.id]: event.target.value });
-  };
+  const classes = useStyles();
 
-  submit = async () => {
-    const { email, password } = this.state;
-    const { loadAuth } = this.props;
-
+  const submit = async () => {
     await loadAuth({ email, password });
   };
 
-  render() {
-    const { email, password } = this.state;
-
-    return (
-      <div className="login">
-        <form>
-          <input
-              id="email"
-              label="Email"
-              type="text"
-              value={email}
-              onChange={this.handleChange}
-          />
-          <input
-              id="password"
-              label="Senha"
-              type="password"
-              value={password}
-              onChange={this.handleChange}
-          />
-        </form>
-        <button onClick={this.submit}>
-            Entrar
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div className="login">
+      <form>
+        <TextField
+          id="email"
+          label="Email"
+          className={classes.textField}
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          margin="normal"
+        />
+        <TextField
+          id="password"
+          label="Password"
+          type="password"
+          className={classes.textField}
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          margin="normal"
+        />
+      </form>
+      <Button variant="contained" color="primary" onClick={submit}>
+        Entrar
+      </Button>
+    </div>
+  );
 }
 
 Login.propTypes = {
